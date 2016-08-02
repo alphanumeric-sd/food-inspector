@@ -3,6 +3,7 @@ GEM
   specs:
     ast (2.3.0)
     diff-lcs (1.2.5)
+    mixlib-cli (1.7.0)
     parser (2.3.1.2)
       ast (~> 2.2)
     powerpack (0.1.1)
@@ -35,6 +36,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  mixlib-cli (~> 1.6)
   rake (~> 11.2, >= 11.2.2)
   rspec (~> 3.5)
   rubocop (~> 0.42.0)
