@@ -1,4 +1,5 @@
 require 'mixlib/cli'
+require 'require_all'
 class HealthInspector
   # top level documentation
   class Client
@@ -19,7 +20,8 @@ class HealthInspector
     end
 
     def load_remedies
-      puts config[:remedy_directory]
+      remedy_dir = config[:remedy_directory]
+      require_all "#{remedy_dir}/**/*_remedy.rb"
     end
   end
 end
